@@ -84,13 +84,9 @@ app/
 
 ---
 
-## 📸 Mini Mockup de la Landing
-
 <div align="center">
 <img src="https://user-images.githubusercontent.com/tuusuario/mockup.png" alt="FlowMetrics Landing Mockup" width="600"/>
 </div>
-
-> Una vista previa profesional de la landing page para mostrar diseño y estructura.
 
 ---
 
