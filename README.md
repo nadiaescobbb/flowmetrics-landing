@@ -1,23 +1,24 @@
 # FlowMetrics Landing Page
 
-Profesional **landing page** de **FlowMetrics**, plataforma de analítica en tiempo real para equipos que toman decisiones basadas en datos.
+Profesional landing page de **FlowMetrics**, plataforma de analítica en tiempo real para equipos que toman decisiones basadas en datos.
 
 ---
 
 ## Tecnologías y herramientas
 
-- **React 18** ⚛️ - Librería para interfaces dinámicas  
-- **Next.js 13** ⬆️ - Framework optimizado para SEO y SSR  
-- **TailwindCSS** 🎨 - Framework CSS moderno y responsivo  
-- **TypeScript** 🟦 - Tipado estático para mayor confiabilidad  
-- **Vercel** 🚀 - Despliegue y hosting optimizado  
+| Tecnología | Logo | Descripción |
+|------------|------|------------|
+| React 18 | ![React](https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/react.svg) | Librería para interfaces dinámicas |
+| Next.js 13 | ![Next.js](https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/nextdotjs.svg) | Framework optimizado para SEO y SSR |
+| TailwindCSS | ![Tailwind](https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/tailwindcss.svg) | Framework CSS moderno y responsivo |
+| TypeScript | ![TypeScript](https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/typescript.svg) | Tipado estático para mayor confiabilidad |
+| Vercel | ![Vercel](https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/vercel.svg) | Despliegue y hosting optimizado |
 
 ---
 
 ## Características principales
 
 ### ✅ Secciones server-rendered
-
 - Hero  
 - Social Proof  
 - Features  
@@ -27,20 +28,16 @@ Profesional **landing page** de **FlowMetrics**, plataforma de analítica en tie
 - Final CTA  
 - Footer  
 
-### ⚡ FAQ interactivo  
-
+### ⚡ FAQ interactivo
 - Accordion dinámico con estado manejado del lado del cliente  
 
-### 📱 Diseño responsivo  
-
+### 📱 Diseño responsivo
 - Compatible con móviles, tablets y escritorio  
 
-### 🧩 Componentes reutilizables  
-
+### 🧩 Componentes reutilizables
 - Botones, tarjetas, contenedores con estilo consistente  
 
-### 🔍 SEO-friendly  
-
+### 🔍 SEO-friendly
 - Estructura semántica y contenido crawlable  
 
 ---
@@ -78,9 +75,6 @@ app/
 ├─ globals.css # Estilos globales con Tailwind
 ├─ layout.tsx # Layout principal
 └─ page.tsx # Página de inicio
-
-
----
 
 
 ---
