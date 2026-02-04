@@ -1,24 +1,29 @@
-# FlowMetrics Landing Page
+# FlowMetrics Landing Page 🚀
 
 Profesional landing page de **FlowMetrics**, plataforma de analítica en tiempo real para equipos que toman decisiones basadas en datos.
 
 ---
 
-## Tecnologías y herramientas
+## 🎨 Tecnologías y herramientas
 
-| Tecnología | Logo | Descripción |
-|------------|------|------------|
-| React 18 | ![React](https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/react.svg) | Librería para interfaces dinámicas |
-| Next.js 13 | ![Next.js](https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/nextdotjs.svg) | Framework optimizado para SEO y SSR |
-| TailwindCSS | ![Tailwind](https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/tailwindcss.svg) | Framework CSS moderno y responsivo |
-| TypeScript | ![TypeScript](https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/typescript.svg) | Tipado estático para mayor confiabilidad |
-| Vercel | ![Vercel](https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/vercel.svg) | Despliegue y hosting optimizado |
+<div align="center">
+
+<img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/react.svg" alt="React" width="40" height="40" title="React"/> &nbsp;
+<img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/nextdotjs.svg" alt="Next.js" width="40" height="40" title="Next.js"/> &nbsp;
+<img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/tailwindcss.svg" alt="TailwindCSS" width="40" height="40" title="TailwindCSS"/> &nbsp;
+<img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/typescript.svg" alt="TypeScript" width="40" height="40" title="TypeScript"/> &nbsp;
+<img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/vercel.svg" alt="Vercel" width="40" height="40" title="Vercel"/>  
+
+</div>
+
+> Librerías y herramientas modernas usadas para un landing rápido, responsivo y SEO-friendly.
 
 ---
 
-## Características principales
+## ⚡ Características principales
 
-### ✅ Secciones server-rendered
+### 🏗 Secciones server-rendered
+
 - Hero  
 - Social Proof  
 - Features  
@@ -28,13 +33,13 @@ Profesional landing page de **FlowMetrics**, plataforma de analítica en tiempo 
 - Final CTA  
 - Footer  
 
-### ⚡ FAQ interactivo
+### 🧩 FAQ interactivo
 - Accordion dinámico con estado manejado del lado del cliente  
 
 ### 📱 Diseño responsivo
 - Compatible con móviles, tablets y escritorio  
 
-### 🧩 Componentes reutilizables
+### 🎯 Componentes reutilizables
 - Botones, tarjetas, contenedores con estilo consistente  
 
 ### 🔍 SEO-friendly
@@ -42,19 +47,18 @@ Profesional landing page de **FlowMetrics**, plataforma de analítica en tiempo 
 
 ---
 
-## Checklist de buenas prácticas implementadas
+## ✅ Checklist de buenas prácticas implementadas
 
-- [x] Responsive design  
-- [x] Componentes modulares y reutilizables  
-- [x] Accesibilidad básica  
-- [x] Rendimiento optimizado  
-- [x] Código limpio y escalable  
-- [x] Estructura semántica para SEO  
+- Responsive design  
+- Componentes modulares y reutilizables  
+- Accesibilidad básica  
+- Rendimiento optimizado  
+- Código limpio y escalable  
+- Estructura semántica para SEO  
 
 ---
 
-## Estructura del proyecto
-
+## 🗂 Estructura del proyecto
 app/
 ├─ components/
 │ ├─ sections/ # Secciones de la landing
@@ -77,9 +81,20 @@ app/
 └─ page.tsx # Página de inicio
 
 
+
 ---
 
-## Objetivos del proyecto
+## 📸 Mini Mockup de la Landing
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/tuusuario/mockup.png" alt="FlowMetrics Landing Mockup" width="600"/>
+</div>
+
+> Una vista previa profesional de la landing page para mostrar diseño y estructura.
+
+---
+
+## 🎯 Objetivos del proyecto
 
 1. Presentar **FlowMetrics** de forma profesional  
 2. Convertir visitantes en leads mediante **CTAs claros y visibles**  
@@ -88,9 +103,7 @@ app/
 
 ---
 
-## Autor
+## 👩‍💻 Autor
 
 **Nadia Escobbb**  
 [GitHub](https://github.com/nadiaescobbb) • [Correo](mailto:devcodernadia@gmail.com)
-
----
