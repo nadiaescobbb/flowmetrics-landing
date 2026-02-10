@@ -1,48 +1,24 @@
-/**
- * Final CTA Component
- * 
- * Architecture: Server component
- * Why: Last chance to convert visitors before footer
- * Design: High contrast, clear action
- * Performance: No JavaScript overhead
- */
-
-import Container from '../ui/Container'
-import Button from '../ui/Button'
+import Button from "../ui/Button";
+import Container from "../ui/Container";
 
 export default function FinalCTA() {
   return (
-    <section className="py-24 md:py-32 bg--to-br from-primary-600 to-primary-700">
-      <Container>
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to transform your analytics?
-          </h2>
-          <p className="text-xl text-primary-100 mb-10">
-            Join thousands of teams already making better decisions with FlowMetrics.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button 
-              size="lg" 
-              variant="secondary"
-              className="bg-white text-primary-600 hover:bg-gray-50"
-            >
-              Start Free Trial
-            </Button>
-            <Button 
-              size="lg"
-              className="bg-primary-800 text-white hover:bg-primary-900"
-            >
-              Schedule Demo
-            </Button>
-          </div>
-
-          <p className="text-primary-100 mt-8 text-sm">
-            14-day free trial • No credit card required • Cancel anytime
-          </p>
+    <section className="py-12">
+      <Container className="brand-gradient rounded-[2rem] p-12 lg:p-20 text-center text-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 p-20 opacity-10">
+          🚀
+        </div>
+        <h2 className="text-4xl lg:text-5xl font-black mb-8">Ready to transform your data infrastructure?</h2>
+        <p className="text-white/80 text-lg mb-12 max-w-2xl mx-auto">Join 1,000+ data teams building modern real-time pipelines with FlowMetrics.</p>
+        <div className="flex flex-wrap justify-center gap-6">
+          <Button className="bg-white text-primary px-10 py-5 rounded-2xl text-xl font-black shadow-2xl hover:scale-105 transition-transform">
+            Start Your Free Trial
+          </Button>
+          <Button className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-5 rounded-2xl text-xl font-black hover:bg-white/20 transition-colors">
+            Talk to Sales
+          </Button>
         </div>
       </Container>
     </section>
-  )
+  );
 }

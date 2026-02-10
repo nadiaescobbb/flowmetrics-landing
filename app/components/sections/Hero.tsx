@@ -1,54 +1,46 @@
-/**
- * Hero Component
- * 
- * Architecture: Server component
- * SEO: Single H1 on page, outcome-focused headline
- * Design: Large spacing, clear hierarchy, strong CTAs
- * Performance: No JavaScript, optimized for LCP (Largest Contentful Paint)
- */
-
-import Container from '../ui/Container'
-import Button from '../ui/Button'
+import Button from "../ui/Button";
+import Container from "../ui/Container";
 
 export default function Hero() {
   return (
-    <section className="pt-20 pb-16 md:pt-32 md:pb-24 lg:pt-40 lg:pb-32">
-      <Container>
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Trust Badge */}
-          <div className="inline-flex items-center space-x-2 bg-primary-50 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-8">
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-            </svg>
-            <span>Trusted by 2,000+ growing businesses</span>
+    <section className="relative pt-20 pb-16 overflow-hidden bg-white dark:bg-background-dark">
+      <Container className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col gap-8">
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider w-fit">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+            </span>
+            Now in v2.0
           </div>
-
-          {/* Main Headline - Single H1 for SEO */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 mb-6 text-balance">
-            Analytics that drive real business growth
+          <h1 className="text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-[#121117] dark:text-white">
+            Master Your <span className="text-primary">Data Flow</span> in Real-Time
           </h1>
-
-          {/* Supporting Text */}
-          <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Get the insights you need without the complexity. FlowMetrics delivers real-time analytics designed for teams that move fast.
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-[500px] leading-relaxed">
+            Optimize your data pipelines with high-fidelity real-time analytics designed for modern data teams.
           </p>
-
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Button size="lg" href="#pricing">
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button className="bg-gradient-to-r from-primary-gradient-start to-primary-gradient-end">
               Start Free Trial
             </Button>
-            <Button size="lg" variant="secondary" href="#demo">
-              Watch Demo
+            <Button className="bg-gray-100 dark:bg-gray-800 text-black dark:text-white hover:bg-gray-200">
+              View Demo
             </Button>
           </div>
-
-          {/* Trust Indicators */}
-          <p className="text-sm text-gray-500">
-            No credit card required • 14-day free trial • Cancel anytime
-          </p>
+        </div>
+        <div className="relative">
+          <div className="absolute -top-12 -left-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-12 -right-12 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+          <div className="relative rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-2xl">
+            <div
+              className="w-full aspect-video bg-cover bg-center"
+              style={{
+                backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuDleNGD2Glo305eQzI2t8748GsmYRlTFs7lPqWImMvg7swjvX6z4cLZjUb8iKhge41lQQ9PrV6iaSB4dV-oC9mj_Fu3inl6IKzDlX6BPOy7G4MPTyz7V8gL_hN-3ndXnEO9NFXp3b_e4Di_lNVmwk5adsuM7gtdD1dJ6u8CHQMNZH0g04bLkMVn_0WDuTY5mlkg1u4pphRq70sIpYHIMv-8EYqqHfO5WHHWDKYdV6zYP9FOavrVZi5MEcveNW8CdjcSmnCUwo0ot2S_")`,
+              }}
+            />
+          </div>
         </div>
       </Container>
     </section>
-  )
+  );
 }

@@ -1,52 +1,46 @@
-/**
- * Header Component
- * 
- * Architecture: Server component (no interactivity needed for basic nav)
- * Why: Sticky header for persistent access to CTA
- * SEO: <header> semantic HTML, proper link structure
- * Performance: No JavaScript, pure CSS sticky positioning
- */
-
-import Container from '../ui/Container'
-import Button from '../ui/Button'
+import Button from "../ui/Button";
+import Container from "../ui/Container";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-      <Container>
-        <nav className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <a href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">F</span>
-            </div>
-            <span className="font-semibold text-xl text-gray-900">FlowMetrics</span>
+    <header className="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-[#f1f0f4] dark:border-gray-800">
+      <Container className="flex items-center justify-between h-16">
+        {/* Logo */}
+        <div className="flex items-center gap-2">
+          <div className="p-1.5 bg-gradient-to-r from-primary-gradient-start to-primary-gradient-end rounded-lg text-white">
+            <span className="material-symbols-outlined !text-xl">insights</span>
+          </div>
+          <h2 className="text-[#121117] dark:text-white text-xl font-black tracking-tight">
+            FlowMetrics
+          </h2>
+        </div>
+
+        {/* Navigation */}
+        <nav className="hidden md:flex items-center gap-8">
+          <a className="text-sm font-semibold hover:text-primary transition-colors" href="#">
+            Product
           </a>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium">
-              Features
-            </a>
-            <a href="#pricing" className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium">
-              Pricing
-            </a>
-            <a href="#faq" className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium">
-              FAQ
-            </a>
-          </div>
-
-          {/* CTA */}
-          <div className="flex items-center space-x-4">
-            <a href="#" className="hidden sm:inline-flex text-gray-600 hover:text-gray-900 text-sm font-medium">
-              Sign in
-            </a>
-            <Button size="sm" href="#pricing">
-              Get Started
-            </Button>
-          </div>
+          <a className="text-sm font-semibold hover:text-primary transition-colors" href="#">
+            Solutions
+          </a>
+          <a className="text-sm font-semibold hover:text-primary transition-colors" href="#">
+            Pricing
+          </a>
+          <a className="text-sm font-semibold hover:text-primary transition-colors" href="#">
+            Docs
+          </a>
         </nav>
+
+        {/* Actions */}
+        <div className="flex items-center gap-4">
+          <Button className="bg-transparent text-black dark:text-white hover:text-primary px-4 py-2">
+            Login
+          </Button>
+          <Button className="bg-gradient-to-r from-primary-gradient-start to-primary-gradient-end text-white px-5 py-2.5 rounded-lg text-sm font-bold shadow-md">
+            Get Started
+          </Button>
+        </div>
       </Container>
     </header>
-  )
+  );
 }

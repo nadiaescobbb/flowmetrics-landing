@@ -1,20 +1,14 @@
-/**
- * Container Component
- * 
- * Purpose: Provides consistent max-width and horizontal padding across all sections
- * Why: Centralizes responsive layout logic - easier to maintain and ensures consistency
- * Performance: Zero runtime cost, purely styling
- */
+import { ReactNode } from "react";
 
 interface ContainerProps {
-  children: React.ReactNode
-  className?: string
+  children: ReactNode;
+  className?: string;
 }
 
-export default function Container({ children, className = '' }: ContainerProps) {
+export default function Container({ children, className = "" }: ContainerProps) {
   return (
-    <div className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ${className}`}>
+    <div className={`max-w-[1200px] mx-auto px-6 ${className}`}>
       {children}
     </div>
-  )
+  );
 }

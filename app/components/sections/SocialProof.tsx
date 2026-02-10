@@ -1,33 +1,26 @@
-
-import Container from '../ui/Container'
-
 export default function SocialProof() {
   const companies = [
-    'Acme Corp',
-    'TechFlow',
-    'DataSync',
-    'CloudBase',
-    'MetricLab',
-    'FastTrack'
-  ]
+    { name: "TechFlow", icon: "api" },
+    { name: "CloudScale", icon: "cloud" },
+    { name: "Velocity", icon: "bolt" },
+    { name: "SecureData", icon: "shield" },
+    { name: "QueryX", icon: "database" },
+  ];
 
   return (
-    <section className="py-12 border-y border-gray-100 bg-gray-50">
-      <Container>
-        <p className="text-center text-sm font-medium text-gray-500 mb-8 uppercase tracking-wide">
-          Trusted by innovative companies
+    <section className="py-12 bg-background-light dark:bg-background-dark/50 border-y border-gray-100 dark:border-gray-800">
+      <div className="max-w-[1200px] mx-auto px-6">
+        <p className="text-center text-sm font-bold text-gray-400 uppercase tracking-widest mb-10">
+          Trusted by leading data teams
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
-          {companies.map((company) => (
-            <div 
-              key={company}
-              className="text-gray-400 font-semibold text-lg hover:text-gray-600 transition-colors"
-            >
-              {company}
+        <div className="flex flex-wrap justify-center items-center gap-12 opacity-40 grayscale">
+          {companies.map((c) => (
+            <div key={c.name} className="flex items-center gap-2 text-xl font-bold">
+              <span className="material-symbols-outlined">{c.icon}</span> {c.name}
             </div>
           ))}
         </div>
-      </Container>
+      </div>
     </section>
-  )
+  );
 }
